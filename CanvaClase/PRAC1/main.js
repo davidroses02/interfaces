@@ -56,8 +56,8 @@ function colorAleatorio() {
 }
 
 function cuadradosAleatorios(contexto) {
-    for (let index = 0; index < 200; index+=10) {
-        for (let j = 0; j <= 200; j+=10) {
+    for (let index = 0; index < 800; index+=10) {
+        for (let j = 0; j <= 800; j+=10) {
             contexto.fillStyle = colorAleatorio();
             contexto.fillRect(index,j,10,10);
         }

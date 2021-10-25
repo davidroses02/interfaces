@@ -10,24 +10,70 @@ function cargaContextoCanvas(idCanvas) {
 }
 
 window.onload = function () {
-
+    
     let contexto = cargaContextoCanvas('micanvas');
     if (contexto) {
-       
-       contexto.beginPath();
-       contexto.lineTo(130,80);
-       contexto.moveTo(120,129);
-       contexto.bezierCurveTo(140,70,95,102,152,0);
-       /**
-         
-        contexto.bezierCurveTo(90,125,100,150,100,150);
-        contexto.bezierCurveTo(111,184.5,110,262,110,262);
-        contexto.bezierCurveTo(143,274,175,262,175,262);
-        contexto.bezierCurveTo(177,188,191,145,191,145);
-        contexto.bezierCurveTo(191,145,199,121.5,194,102.5);
-        contexto.lineTo(194,79);
-        */
+        
+        contexto.fillStyle = '#800099';
+        contexto.strokeRect(107, 65, 10, 10);
+        contexto.strokeRect(43, 65, 10, 10);
+        
+        
+        //contexto.rotate(200,75);
+        //moverRueda(contexto);
+
+        contexto.beginPath();
+        
+        contexto.moveTo(25,25);
+        contexto.lineTo(100,25);
+        
+        contexto.moveTo(25,25);
+        contexto.lineTo(20,45);
+        
+        contexto.moveTo(20,45);
+        contexto.lineTo(5,45);
+
+        contexto.moveTo(5,45);
+        contexto.lineTo(5,70);
+
+        contexto.moveTo(5,70);
+        contexto.lineTo(35,70);
+
+        contexto.moveTo(60,70);
+        contexto.lineTo(100,70);
+
+        contexto.moveTo(125,70);
+        contexto.lineTo(160,70);
+
+        contexto.moveTo(160,70);
+        contexto.lineTo(165,60);
+
+        contexto.moveTo(165,60);
+        contexto.lineTo(165,50);
+
+        contexto.moveTo(165,50);
+        contexto.lineTo(115,40);
+
+        contexto.moveTo(115,40);
+        contexto.lineTo(93,40);
+
+        contexto.moveTo(93,40);
+        contexto.lineTo(100,25);
+
+        //contexto.moveTo(60,70);
+        
+        contexto.arc(48,70,12,0,Math.PI*2,true);
+        //contexto.fill();
         contexto.stroke();
+        contexto.beginPath();
+        contexto.arc(112,70,12,0,Math.PI*2,true);
+        //contexto.fill();
+        contexto.stroke();
+
+        contexto.closePath();
+        contexto.stroke();
+       
     }
 
+    
 }

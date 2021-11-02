@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+header {
+    border-width:2px;
+    border-color:rgb(10, 10, 23);
+    border-style:solid;
+}
+
+nav {
+    height:80px;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+nav ul {
+    align-items: center;
+}
+
+nav ul li{
+    width:100px; 
+    height:60px;
+    border-width:2px;
+    border-color:rgb(10, 10, 23);
+    border-style:solid;
+    display: inline-block;
+
+}

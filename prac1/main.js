@@ -26,7 +26,7 @@ window.onload = function () {
 
 function coche(contexto) {
 
-    contexto.clearRect(0, 0, 800, 800);
+    contexto.clearRect(0, 0, 1500, 1500);
     
     contexto.strokeRect(107+i, 65, 10, 10);
         contexto.strokeRect(43+i, 65, 10, 10);

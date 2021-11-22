@@ -1,30 +1,67 @@
 body {
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#caja {
+    margin: 0 auto;
+    width: 90%;
 }
 
 header {
-    border-width:2px;
-    border-color:rgb(10, 10, 23);
+    border: 2px black;
+    text-align: center;
+    background-color: rgb(43, 143, 23);
     border-style:solid;
 }
 
 nav {
+    background-color: rgb(28, 131, 228);
     height:80px;
-    border-width: 2px;
-    border-color: black;
+    border:2px black;;
     border-style: solid;
+    text-align: center;
+    padding: 2px;
 }
 
 nav ul {
-    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-nav ul li{
+nav a {
+    text-decoration: none;
+}
+
+main {
+    min-height: 450px;
+    padding: 0 1%;
+    width: 77%;
+}
+
+nav ul li {
     width:100px; 
-    height:60px;
-    border-width:2px;
+    background-color: rgb(38, 218, 231);
+    border-width:1px;
+    padding: 0.5rem;
     border-color:rgb(10, 10, 23);
     border-style:solid;
     display: inline-block;
+}
 
+main,
+aside {
+    display: inline-block;
+    vertical-align: top;
+}
+
+main section {
+    background-color:rgb(117, 245, 127)
+}
+
+footer {
+    background-color: rgb(43, 143, 23);
+    text-align: center;
+    padding: 10px;
 }

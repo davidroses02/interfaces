@@ -1,0 +1,147 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#caja {
+    margin: 0 auto;
+    width: 90%;
+}
+
+header {
+    border: 2px black;
+    text-align: center;
+    background-color: rgb(43, 143, 23);
+    border-style:solid;
+}
+
+nav {
+    background-color: rgb(28, 131, 228);
+    border:2px black;;
+    border-style: solid;
+    text-align: center;
+    padding: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav ul li {
+    width:100px; 
+    margin-left: 10px;
+    background-color: rgb(38, 218, 231);
+    border-width:1px;
+    padding: 0.5rem;
+    border-color:rgb(10, 10, 23);
+    border-style:solid;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+main {
+    min-height: 450px;
+    padding: 0 1%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+main section {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 4px;
+    border: 2px solid black;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(2,1fr);
+    min-height: 450px;
+}
+
+.fechas {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+}
+
+.fechaUno,
+.fechaDos {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    list-style: none;
+    text-align: initial;
+}
+
+.img {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.img img {
+    width: 80%;
+    margin: 8px 2px 8px 2px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(1,1fr);
+    align-items: center;
+}
+
+footer h2 {
+    grid-column: span 2 / auto;
+}
+
+.RRSS ul {
+    margin: 0;
+    list-style-type: none; 
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,1fr);
+    
+}
+
+.RRSS ul li {
+    margin-left: 5px;
+}
+
+.RRSS {
+    width: 54%;
+    text-align: center;
+}
+
+.nombre {
+    width: 45%;
+}
+
+.principal {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    border: 2px solid black;
+}
+
+main section {
+    background-color:rgb(117, 245, 127)
+}
+
+footer {
+    background-color: rgb(43, 143, 23);
+    text-align: center;
+    padding: 10px;
+}

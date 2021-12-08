@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#caja {
+    margin: 0 auto;
+    width: 90%;
+}
+
+header {
+    border: 2px black;
+    text-align: center;
+    background-color: rgb(43, 143, 23);
+    border-style:solid;
+}
+
+nav {
+    background-color: rgb(28, 131, 228);
+    border:2px black;;
+    border-style: solid;
+    text-align: center;
+    padding: 2px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+main {
+    min-height: 450px;
+    padding: 0 1%;
+    width: 70%;
+}
+
+aside {
+    width: 23%;
+    min-height: 450px;
+}
+
+main section {
+    display: inline-block;
+    width: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 4px;
+    border: 2px solid black;
+}
+
+.fechaUno,
+.fechaDos {
+    display: inline-block;
+    list-style: none;
+    text-align: initial;
+}
+
+.RRSS ul li {
+    margin: 0;
+    list-style-type: none; 
+    display: inline-block;
+    width: 20%;
+}
+
+.RRSS ul{
+    width: 100%;
+}
+
+.RRSS {
+    width: 54%;
+}
+
+.nombre {
+    text-align: left;
+    display: inline-block;
+    width: 45%;
+}
+
+.nombre,
+.RRSS {
+    display: inline-block;
+}
+
+nav ul li {
+    width:100px; 
+    margin-left: 10px;
+    background-color: rgb(38, 218, 231);
+    border-width:1px;
+    padding: 0.5rem;
+    border-color:rgb(10, 10, 23);
+    border-style:solid;
+    display: inline-block;
+}
+
+main,
+aside {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    border: 2px solid black;
+}
+
+main section {
+    background-color:rgb(117, 245, 127)
+}
+
+footer {
+    background-color: rgb(43, 143, 23);
+    text-align: center;
+    padding: 10px;
+}
+
+.img img{
+    display: inline-block;
+    width: 45%;
+}

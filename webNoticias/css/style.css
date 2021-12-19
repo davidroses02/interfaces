@@ -34,6 +34,25 @@ header nav ul {
     rgb(0, 0, 0) 30%);
 }
 
+header nav ul li a:hover {
+    animation-duration: 3s;
+    animation-name: colores;
+}
+
+@keyframes colores {
+    0%   {color:red;}
+    25%  {color:yellow; }
+    50%  {color:blue;}
+    75%  {color:green;}
+    100% {color:red;}
+}
+
+.formato1 section img:hover, 
+.formato5 section img:hover {
+    transition-duration: 2s;
+    transform: rotate(100deg);
+}
+
 header nav {
     display: flex;
     flex-direction: row;
@@ -159,6 +178,46 @@ header {
     text-align: center;
 }
 
+/* FORMATO 5 */
+
+.formato5 {
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formato5 section {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formato5 section h2 {
+    border-radius: 5px 5px 5px 5px;
+    border: 2px solid black;
+    padding: 4px;
+    text-align: center;
+}
+
+.formato5 img {
+    margin-top: 20px;
+}
+
+.img-5 {
+    width: 80%;
+}
+
+.img-6 {
+    width: 80%;
+}
+
+.img-7 {
+    width: 80%;
+}
 /* FOOTER */
 
 footer {
@@ -192,6 +251,17 @@ footer {
 
 .RRSS ul li {
     margin-left: 5px;
+}
+
+.RRSS ul li img:hover {
+    color: rgb(14, 157, 71);
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transform: scale(1.5) rotate(360deg);
+    -moz-transform: scale(1.5) rotate(360deg);
+    -o-transform: scale(1.5) rotate(360deg);
 }
 
 .RRSS ul li img {

@@ -3,9 +3,11 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    min-width: 380px;
 }
 
 .formulario {
+    width: 100%;
     margin-top: 5px;
     display: flex;
     flex-direction: column;
@@ -44,4 +46,11 @@ input:valid {
 
 input:invalid {
     border: 2px solid rgb(206, 6, 6);
+}
+
+@media screen and (min-width: 960px) {
+
+
+
+
 }

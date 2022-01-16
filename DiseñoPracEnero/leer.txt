@@ -1,0 +1,6 @@
+Hola Jaime!
+
+A causa de los media queries, la complejidad de la práctica, y 
+el diseño que había hecho con wareframe, mi html es un completo caos.
+Me he confundido bastante, y creo que he hecho un abuso excesivo del 
+display none/block. Pese a todo esto lo he sacado. Un saludo!

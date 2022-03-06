@@ -1,0 +1,136 @@
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        background-color: #C5CAE9;
+    }
+    
+    /* NAV */
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #303F9F;
+        color: white;
+    }
+    
+    nav .list-nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin-right: 25px;
+    }
+    
+    .list-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .list-nav ul li {
+        margin-left: 5px;
+    }
+    
+    nav h2 {
+        margin-left: 10px;
+    }
+
+    /* FORMULARIO */
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    input:valid {
+        border: 2px solid green;
+    }
+    
+    input:invalid {
+        border: 2px solid rgb(206, 6, 6);
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botones button {
+        margin-left: 10px;
+    }
+
+    /* FORMULARIO */
+
+    .ordenar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    form label,
+    .ordenar label {
+        margin-bottom: 5px;
+        margin-right: 5px;
+    }
+
+    input:valid {
+        border: 2px solid green;
+    }
+    
+    input:invalid {
+        border: 2px solid rgb(206, 6, 6);
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .botones button {
+        margin-left: 10px;
+    }
+
+    main > h2 {
+        margin-left: 10px;
+    }
+
+
+
+    @media screen and (min-width: 560px) {
+
+        .botones {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            margin-left: 80px;
+        }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        
+    }

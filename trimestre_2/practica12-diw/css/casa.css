@@ -1,0 +1,367 @@
+
+
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 12px;
+        background-color: #C5CAE9;
+    }
+    
+    /* NAV */
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #303F9F;
+        color: white;
+    }
+    
+    nav .list-nav ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin-right: 25px;
+    }
+    
+    .list-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .list-nav ul li {
+        margin-left: 5px;
+    }
+    
+    nav h2 {
+        margin-left: 10px;
+    }
+    
+    /* SECTION --> CÓRDOBA */
+    
+    article {
+        background-color: #3F51B5;
+        margin-bottom: 2px;
+        height: 70px;
+    }
+    
+    article section ul {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 15px;
+    }
+    
+    /* aside */
+    
+    .aside-mobile {
+        position: sticky;
+        width: 100%;
+        margin: 0;
+        display: block;
+        background-color: #3F51B5;
+    }
+    
+    .list-search {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+    }
+    
+    .aside-mobile .list-search ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+        color: white;
+    }
+    .list-search ul li {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    /* MAIN */
+
+    /* FOTO */
+
+    main section {
+        margin-top: 5px;
+    }
+    
+    main section img {
+        width: 100%;
+    }
+
+    /* TODO HASTA LAS CARACTERISTICAS */
+
+    .caracteristicas-casa > h3,
+    main section h1,
+    main section h2,
+    main section p {
+        margin-left: 10px;
+    }
+
+    
+    .detalles > h3 {
+        color: #757575;
+    }
+    .caracteristicas-casa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .caracteristicas-casa ul {
+        list-style: none;
+    }
+    
+    .caracteristicas-casa ul li h3 {
+        color: #757575;
+    }
+    
+    .caracteristicas-casa ul li > h2 {
+        margin-left: 0;
+    }
+    
+    .valorar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-right: 10px;
+    }
+    
+    .valorar ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        align-items: center;
+        margin-left: 15px;
+        padding: 0;
+        
+    }
+    
+    .rate {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .rate li i{
+        color: #3F51B5;
+    }
+    
+    .valorar ul li > h3{
+        color: black;
+    }
+    
+    .detalles-icons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .detalles-icons ul li {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        align-items: center;
+    }
+    
+    /* UBICACIÓN */
+
+    main section p {
+        margin-right: 10px;
+    }
+
+    .ubicacion iframe {
+        width: 100%;
+    }
+
+    /* FORMULARIO */
+
+    .formulario form {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .formulario form label {
+       margin-top: 5px;
+    }
+
+    input:valid {
+        border: 2px solid green;
+    }
+    
+    input:invalid {
+        border: 2px solid rgb(206, 6, 6);
+    }
+
+    .botones {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .botones button {
+        margin-left: 10px;
+        margin-bottom:20px;
+    }
+
+    .detalles-icons li i {
+        margin-right: 5px;
+    }
+
+    .aside-mobile {
+        display: block;
+    }
+
+    aside {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    footer {
+        display: flex;
+        flex-direction: row; 
+        background-color: #303F9F; 
+        justify-content: space-around;
+    }
+
+    .nombre {
+        color: white;
+    }
+
+    .RRSS ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .RRSS ul li a {
+        color: white;
+        margin-right: 10px;
+    }
+
+    .slider {
+        display: flex;
+        width: 100%;
+        height: 20em;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    
+    .slider img {
+        flex: 0 0 100%;
+        object-fit: scale-down;
+        scroll-snap-align: center;
+    }
+
+    @media screen and (min-width: 560px) {
+        
+        .formulario form {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        aside {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        
+        
+        .aside-mobile {
+            display: none;
+        }
+        
+        aside {
+            display: block;
+        }
+        
+        .formulario {
+            display: none;
+        }
+        
+        main {
+            background-color: white;
+        }
+
+        main aside {
+            width: 35%;
+            margin: 5px;
+            text-align: center;
+        }
+
+        main section {
+            width: 60%;
+            background-color: #C5CAE9;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 15px;
+            padding-bottom: 15px;
+        }
+
+        aside form {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        aside form label {
+            margin-bottom: 10px;
+        }
+
+        .caja-aside {
+            background-color: #C5CAE9;
+        }
+
+        .caja-aside h2 {
+            background-color: #757575;
+            margin: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        
+
+    }

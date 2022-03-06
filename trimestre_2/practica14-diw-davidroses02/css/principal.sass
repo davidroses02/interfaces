@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Quicksand:wght@300;500&family=Roboto+Slab:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500&family=Playfair+Display:wght@500&family=Quicksand:wght@300;500&family=Roboto+Slab:wght@200;300&display=swap');
+
+@mixin font-h3
+    margin-left: 25px
+    font-family: 'Playfair Display', serif
+    font-family: 'Quicksand', sans-serif
+
+    @media screen and (min-width:1024px)
+        margin-left: 50px
+
+@mixin font-h4
+    font-family: 'Merriweather Sans', sans-serif
+    font-family: 'Playfair Display', serif
+    font-family: 'Quicksand', sans-serif
+    font-family: 'Roboto Slab', serif
+
+@mixin estructura-column
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+@mixin estructura-skills
+    
+    width: 100%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    border-radius: 2px 
+
+    > p
+        color: white
+        margin: 0
+        margin-right: 5px
+
+
+main
+    @include estructura-column
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    h3
+        @include font-h3
+
+
+
+.sobre_mi
+    @include estructura-column
+
+    h3
+        @include font-h3
+
+.contenido_sobre
+    @include estructura-column
+    align-items: center
+    
+    img
+        width: 60%
+        height: 60%
+        max-width: 368px 
+        max-height: 368px 
+
+    @media screen and (min-width:1024px)
+        margin-top: 25px 
+        margin-left: 200px
+        margin-right: 200px
+        display: flex
+        flex-direction: row
+        justify-content: center
+
+        img
+            width: 368px
+            height: 368px
+            border-radius: 50%
+
+
+
+.parrafo_sobre
+
+    p
+        margin-left: 25px
+        margin-right: 25px
+        font-family: 'Playfair Display', serif;
+        font-family: 'Quicksand', sans-serif;
+        font-family: 'Roboto Slab', serif;
+
+.linea
+    border: 1px solid #9E9E9E
+    width: 90%
+    margin: 10px 10px 10px 17px
+
+    @media screen and (min-width:510px)
+        margin-left: 18px 
+        margin-right: 18px 
+
+    @media screen and (min-width:1024px)
+        width: 95%
+        margin-top: 35px 
+        margin-bottom: 35px 
+        margin-left: 27px
+
+/* PROYECTOS */
+
+.proyectos
+
+    @include estructura-column
+    align-items: center
+
+    @media screen and (min-width:1024px)
+        display: grid
+        grid-template-columns: repeat( 3, 1fr )
+        justify-items: center
+        margin-top: 45px
+        margin-bottom: 45px
+
+    .contenido_proyectos
+
+        border: 2px solid #757575
+        border-radius: 5px
+        max-width: 315px
+        align-items: center 
+
+        img
+            width: 100%
+            margin-top: 5px
+            margin-bottom: 10px
+            border-bottom: 2px solid #757575
+            height: 190px
+    
+    .parrafo_proyecto
+
+        h4
+            @include font-h4
+            margin-left: 20px
+            margin-right: 20px
+            margin-bottom: 10px
+            margin-top: 10px
+            color: #212121
+        
+        p
+            margin-left: 20px
+            margin-right: 20px
+            font-family: 'Playfair Display', serif
+            font-family: 'Quicksand', sans-serif
+            font-family: 'Roboto Slab', serif
+
+.proyecto
+    margin-bottom: 25px
+
+    @media screen and (min-width:1024px)
+        margin: 0
+        max-width: 315px
+    
+
+.linea_proyecto
+    border: 1px solid #9E9E9E
+    width: 84%
+    margin-left: 20px
+
+/* SOFTSKILLS */
+
+.skills
+    @include estructura-column
+
+    h3
+        @include font-h3
+
+.softskills
+    @include estructura-column
+
+    @media screen and (min-width:510px)
+        display: grid
+        grid-template-columns: repeat( 2, 1fr )  
+        
+    @media screen and (min-width:1024px)
+        display: grid
+        grid-template-columns: repeat( 3, 1fr )
+
+
+.softskill
+    
+    @include estructura-column
+    margin-left: 55px
+    margin-right: 55px
+    margin-bottom: 40px
+    text-align: center
+
+    
+    h4
+        @include font-h4
+        margin-bottom: 10px
+        margin-top: 10px
+    
+    p
+        margin-top: 10px
+
+    @media screen and (min-width:1024px)
+        margin-top: 20px
+        margin-bottom: 20px
+    
+.estudios
+    @include estructura-column
+    
+    h3
+        @include font-h3
+
+    .oficiales, .no_oficiales
+        margin-left: 55px
+        margin-right: 55px
+
+.no_oficiales > h4
+    color: #283fc2
+    text-decoration: underline
+
+.certificados > div
+    display: flex
+    flex-direction: row
+    justify-content: left
+    align-items: center
+    
+.oficiales > div, .no_oficiales > div
+    display: flex
+    flex-direction: row
+    justify-content: left
+    align-items: center
+
+.oficiales > div i, .no_oficiales > div i
+    margin-right: 10px
+
+.formacion
+    
+    @media screen and (min-width:1024px)
+        display: flex
+        flex-direction: row
+        
+.tecnicas
+    @include estructura-column
+    margin-bottom: 50px
+    width: 100%;
+    h3
+        @include font-h3
+
+.html
+    @include estructura-column
+    margin-left: 55px
+    margin-right: 55px
+
+.css
+    @include estructura-column
+    margin-left: 55px
+    margin-right: 55px
+
+.js
+    @include estructura-column
+    margin-left: 55px
+    margin-right: 55px
+
+.tecno
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: center
+
+    img
+        width: 35px
+        height: 35px
+        margin-left: 15px
+
+.php
+    @include estructura-column
+    margin-left: 55px
+    margin-right: 55px
+
+.java
+    @include estructura-column
+    margin-left: 55px
+    margin-right: 55px
+
+.contenedor_html
+    @include estructura-skills
+    
+    background-color: #e7876a
+
+    > div
+        width: 80%
+        background-color: #eb540e
+
+.contenedor_css
+    @include estructura-skills
+    background-color: #8ebff7
+
+    > div
+        width: 70%
+        background-color: #283fc2
+
+.contenedor_js
+    @include estructura-skills
+    background-color: #f1e07e
+
+    > div
+        width: 80%
+        background-color: #dfdb0c
+
+.contenedor_php
+    @include estructura-skills
+    background-color: #7e93af
+
+    > div
+        width: 70%
+        background-color: #2f5999
+
+.contenedor_java
+    @include estructura-skills
+    background-color: #f06f6f
+
+    > div
+        width: 80%
+        background-color: #ac1b1b
+
+.rrss_2
+    
+    display: flex
+    flex-direction: colum
+    justify-content: center
+
+    ul
+        display: flex
+        flex-direction: row
+        list-style: none
+        justify-content: space-around
+        align-items: center
+        text-align: center
+        padding: 0
+
+        li
+            margin-right: 15px
+
+#telegram
+    color: #0088cc 
+
+#linkedin
+    color: #2867B2
+
+#instagram
+    color: #E1306C
+
+#twitter
+    color: #1DA1F2
+
+footer
+
+    text-align: center
+
+    p
+        margin-top: 5px
+        font-size: 15px

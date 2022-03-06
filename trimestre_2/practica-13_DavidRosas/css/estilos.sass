@@ -1,0 +1,226 @@
+@mixin transition($time:all 1.2s)
+	transition: $time
+	-webkit-transition: $time
+	-moz-transition: $time
+	-ms-transition: $time
+	-o-transition: $time
+
+@mixin font-size($tamano:16px)
+	font-size: $tamano
+
+@mixin black-white
+	0% {color: black;}
+	50% {color: whitesmoke;}
+	100% {color: black;}
+
+* 
+	margin: 0 auto
+
+article
+	display: inline-block
+
+aside
+
+	border: 10px solid lightgray
+	border-radius: 5px
+	display: block
+	margin: 2%
+	padding: 10px
+	text-align: center
+	width: 18%
+	
+	@media screen and (max-width:550px)
+		width: 60%
+
+
+	a
+		color: whitesmoke
+		text-decoration: none
+
+	img
+		@include transition
+
+	img:hover
+		@include transition($time: scale(1.5) rotate(360deg))
+
+body
+	background: lightgray
+	color: white
+	*font-family:Arial
+	font-family: 'Open Sans' sans-serif
+	@include font-size
+	*margin: 0 auto
+	max-width: 1200px
+	text-shadow: 1px 1px 0 rgba(0,0,0,.3)
+
+header
+	border-radius: 5px
+
+footer
+
+	max-width: 1200px
+	background: rgba(0,0,0,.5)
+	@media screen and (max-width:440px)
+		display: none
+
+
+	> ul > li
+		display: inline-block
+		font-size: 9px
+		height: 25px
+		line-height: 25px
+		margin: 0 5%
+		padding: 10px 0
+		vertical-align: top
+		width: 10%
+
+	ul li:hover
+		*background:rgba(0,0,0,.6)
+		*box-shadow: inset white 0px 8px 8px
+		*padding-bottom: 1px solid white
+
+	ul li img
+		height: 25px
+
+	ul li a
+		color: #DDD
+		*display: inline-block
+		font-weight: bold
+		text-align: center
+		text-decoration: none
+		text-transform: uppercase
+
+	ul li a:hover
+		color: white
+
+nav
+	border-radius: 5px
+
+	ul
+		font-size: 0
+		padding: 0
+
+	ul li
+		background: rgba(0,0,0,.5)
+		display: inline-block
+		font-size: 16px
+		height: 50px
+		line-height: 50px
+		padding: 10px 0
+		vertical-align: top
+		width: 25%
+		@media screen and (max-width:800px)
+			width: 50%
+
+			
+
+	ul li:hover
+		background: rgba(0,0,0,.6)
+		box-shadow: inset white 0px 8px 8px
+
+	ul li img
+
+		height: 50px
+		@media screen and (max-width:800px)
+			width: 80%
+
+
+	ul li a
+		color: #DDD
+		display: block
+		font-weight: bold
+		text-align: center
+		text-decoration: none
+
+	ul li a:hover
+		color: white
+
+section
+
+	*border: 1px solid white
+	*font-size: 0
+	text-align: center
+	width: 70%
+	@media screen and (max-width:800px)
+		width: 100%
+
+
+	article
+		background: #ccc
+		border: 2px solid lightgray
+		border-radius: 5px
+		box-shadow: 5px 5px 5px white
+		color: black
+		font-size: 0.8em
+		margin: 1%
+		padding: 10px
+		width: 150px
+
+	article img
+		@include transition($time: .3s)
+		box-shadow: 3px 3px 10px gray
+		height: 150px
+		width: 150px
+
+	article:hover img
+		@include transition($time: scale(1.1))
+
+%inline-align
+	display: inline-block
+	vertical-align: top
+
+%avatar-personales
+	*float: left
+
+section
+	@extend %inline-align
+
+aside
+	@extend %inline-align
+
+.avatar
+	@extend %avatar-personales
+
+.avatar
+	@extend %avatar-personales
+
+#contenedor
+
+	background: gray
+	display: inline-block
+	*margin: 0 auto
+	max-width: 1200px
+	text-align: center
+
+	@media screen and (max-width:550px)
+		*background:orange
+
+	@media screen and (max-width:440px)
+		*background:yellow
+
+
+.personales
+	padding-bottom: 0.5em
+
+	h2
+		text-shadow: 2px 2px 10px white
+		animation: parpadeo 5s
+		-webkit-animation: parpadeo 5s infinite
+		-moz-animation: parpadeo 5s infinite
+		-ms-animation: parpadeo 5s infinite
+		-o-animation: parpadeo 5s infinite
+
+@keyframes parpadeo
+	@include black-white
+
+@-webkit-keyframes parpadeo
+	@include black-white
+
+@-moz-keyframes parpadeo
+	@include black-white
+
+@-ms-keyframes parpadeo
+	@include black-white
+
+@-o-keyframes parpadeo
+	@include black-white

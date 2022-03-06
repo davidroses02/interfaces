@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/filtro.css">
+    <title>DavidRosas</title>
+</head>
+<body>
+    <nav>
+        <h2>Casas Rurales</h2>
+        <div class="list-nav">
+            <ul>
+                <li><i class="fa fa-flag fa-2x" aria-hidden="true"></i></li>
+                <li>Español (ES)</li>
+            </ul>
+            <ul>
+                <li><i class="fa fa-user fa-2x" aria-hidden="true"></i></li>
+                <li>Iniciar Sesión</li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h2>Formulario de filtrado</h2><br>
+        <form action="#">
+            <h3>Pasos obligatorios:</h3>
+            <div class="ordenar">
+                <label>Máx. Precio: <input type="number" name="max" required ></label>
+                <label>Min. Precio: <input type="number" name="min" required></label>
+            </div>
+            <label>Nº de Habitaciones: <input type="number" name="habitaciones" required></label> 
+            <h3>Detalles:</h3>
+            <label>Tiene Wifi: <input type="checkbox" name="wifi" required></label>
+            <label>Tiene Piscina: <input type="checkbox" name="piscina" required></label>
+            <label>Acepta Mascotas: <input type="checkbox" name="mascota" required></label>
+            <label>Actividades rurales: <input type="checkbox" name="actividades" required></label>
+        </form><br>
+        <div class="botones">
+            <button><a href="filtrado.html">Enviar</a></button>
+            <button><a href="principal.html">Atrás</a></button>
+        </div>
+    </main>
+</body>
+</html>

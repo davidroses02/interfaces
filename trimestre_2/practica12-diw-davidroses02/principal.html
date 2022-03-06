@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/principal.css">
+    <title>DavidRosas</title>
+</head>
+<body>
+    <nav>
+        <h2>Casas Rurales</h2>
+        <div class="list-nav">
+            <ul>
+                <li><i class="fa fa-flag fa-2x" aria-hidden="true"></i></li>
+                <li>Español (ES)</li>
+            </ul>
+            <ul>
+                <li><i class="fa fa-user fa-2x" aria-hidden="true"></i></li>
+                <li>Iniciar Sesión</li>
+            </ul>
+        </div>
+    </nav>
+    <article>
+        <section>
+            <ul>
+                <li><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></li>
+                <li><h2>Córdoba</h2></li>
+                <li><i class="fa fa-map-marker fa-2x" aria-hidden="true"></i></i></li>
+            </ul>
+        </section>
+    </article>
+    <div class="aside-mobile">
+        <div class="list-search">
+            <ul>
+                <li><i class="fa fa-filter fa-2x" aria-hidden="true"></i></li>
+                <li><a href="filtrado.html">Filtrado</a></li>
+            </ul>
+            <ul>
+                <li><i class="fa fa-search fa-2x" aria-hidden="true"></i>
+                </li>
+                <li><a href="buscador.html">Buscador</a></li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <aside>
+            <div class="busqueda">
+                <h2>Búsqueda</h2>
+                <form action="#">
+                    <p><i class="material-icons">search</i>   Búsqueda: <input type="text" name="nombre" required ></p>
+                    <p>Fecha de Entrada: <input type="date" name="entrada" required></p>
+                    <p>Fecha de Salida: <input type="date" name="salida" required></p><br>
+                    <button>Buscar</button>
+                </form>
+            </div>
+            <div class="filtrado">
+                <h2>Filtrado</h2>
+                <form action="#">
+                    <p>Máx. Precio: <input type="number" name="max" required ></p>
+                    <p>Min. Precio: <input type="number" name="min" required></p>
+                    <p>Nº de Habitaciones: <input type="number" name="habitaciones" required></p> 
+                    <h3>Detalles</h3>
+                    <p>Tiene Wifi: <input type="checkbox" name="wifi" required></p>
+                    <p>Tiene Piscina: <input type="checkbox" name="piscina" required></p>
+                    <p>Acepta Mascotas: <input type="checkbox" name="mascota" required></p>
+                    <p>Actividades rurales: <input type="checkbox" name="actividades" required></p>
+                    <button>Filtrar</button>
+                </form>
+            </div>
+        </aside>
+        <section>
+            <div class="formato-card-1">
+                <img src="img/casa-rural_1.jpg">
+                <div class="contenido-casa">
+                    <h2>Casa en la sierra Cordobesa</h2>
+                    <div class="contenido-carac-precio">
+                        <div class="caracteristicas">
+                            <h3>Habitaciones: 4</h3>
+                            <h3>Baños: 3</h3>
+                        </div>
+                        <div class="reserva-contenido-casa">
+                            <h2>500$/Mes</h2>
+                            <button><a href="casa.html">Reserva</a></button>
+                        </div>
+                    </div>
+                    <div class="linea-contenido-casa"></div>
+                    <div class="rate">
+                        <ul>
+                            <li><i class="material-icons">chat</i></li>
+                            <li><h3>Contactar</h3></li>
+                        </ul>
+                        <ul>
+                            <li><h3>4,5</h3></li>
+                            <div class="stars">
+                                <ul>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star_half</i></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="formato-card-1">
+                <img src="img/casa-rural_2.jpg">
+                <div class="contenido-casa">
+                    <h2>Casa rural en Santaella</h2>
+                    <div class="contenido-carac-precio">
+                        <div class="caracteristicas">
+                            <h3>Habitaciones: 5</h3>
+                            <h3>Baños: 3</h3>
+                        </div>
+                        <div class="reserva-contenido-casa">
+                            <h2>300$/Mes</h2>
+                            <button><a href="casa.html">Reserva</a></button>
+                        </div>
+                    </div>
+                    <div class="linea-contenido-casa"></div>
+                    <div class="rate">
+                        <ul>
+                            <li><i class="material-icons">chat</i></li>
+                            <li><h3>Contactar</h3></li>
+                        </ul>
+                        <ul>
+                            <li><h3>4,5</h3></li>
+                            <div class="stars">
+                                <ul>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star_half</i></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="formato-card-1">
+                <img src="img/casa-rural_3.jpg">
+                <div class="contenido-casa">
+                    <h2>Casa rural en Iznájar</h2>
+                    <div class="contenido-carac-precio">
+                        <div class="caracteristicas">
+                            <h3>Habitaciones: 2</h3>
+                            <h3>Baños: 1</h3>
+                        </div>
+                        <div class="reserva-contenido-casa">
+                            <h2>450$/Mes</h2>
+                            <button><a href="casa.html">Reserva</a></button>
+                        </div>
+                    </div>
+                    <div class="linea-contenido-casa"></div>
+                    <div class="rate">
+                        <ul>
+                            <li><i class="material-icons">chat</i></li>
+                            <li><h3>Contactar</h3></li>
+                        </ul>
+                        <ul>
+                            <li><h3>4,5</h3></li>
+                            <div class="stars">
+                                <ul>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star_half</i></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="formato-card-1">
+                <img src="img/casa-rural_4.jpg">
+                <div class="contenido-casa">
+                    <h2>Casa rural en Hornachuelos</h2>
+                    <div class="contenido-carac-precio">
+                        <div class="caracteristicas">
+                            <h3>Habitaciones: 3</h3>
+                            <h3>Baños: 2</h3>
+                        </div>
+                        <div class="reserva-contenido-casa">
+                            <h2>600$/Mes</h2>
+                            <button><a href="casa.html">Reserva</a></button>
+                        </div>
+                    </div>
+                    <div class="linea-contenido-casa"></div>
+                    <div class="rate">
+                        <ul>
+                            <li><i class="material-icons">chat</i></li>
+                            <li><h3>Contactar</h3></li>
+                        </ul>
+                        <ul>
+                            <li><h3>4,5</h3></li>
+                            <div class="stars">
+                                <ul>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star_half</i></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="formato-card-1">
+                <img src="img/casa-rural_5.jpg">
+                <div class="contenido-casa">
+                    <h2>Casa rural en Montemayor</h2>
+                    <div class="contenido-carac-precio">
+                        <div class="caracteristicas">
+                            <h3>Habitaciones: 4</h3>
+                            <h3>Baños: 2</h3>
+                        </div>
+                        <div class="reserva-contenido-casa">
+                            <h2>550$/Mes</h2>
+                            <button><a href="casa.html">Reserva</a></button>
+                        </div>
+                    </div>
+                    <div class="linea-contenido-casa"></div>
+                    <div class="rate">
+                        <ul>
+                            <li><i class="material-icons">chat</i></li>
+                            <li><h3>Contactar</h3></li>
+                        </ul>
+                        <ul>
+                            <li><h3>4,5</h3></li>
+                            <div class="stars">
+                                <ul>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star_half</i></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="formato-card-1">
+                <img src="img/casa-rural_6.jpg">
+                <div class="contenido-casa">
+                    <h2>Casa rural en La Rambla</h2>
+                    <div class="contenido-carac-precio">
+                        <div class="caracteristicas">
+                            <h3>Habitaciones: 4</h3>
+                            <h3>Baños: 3</h3>
+                        </div>
+                        <div class="reserva-contenido-casa">
+                            <h2>440$/Mes</h2>
+                            <button><a href="casa.html">Reserva</a></button>
+                        </div>
+                    </div>
+                    <div class="linea-contenido-casa"></div>
+                    <div class="rate">
+                        <ul>
+                            <li><i class="material-icons">chat</i></li>
+                            <li><h3>Contactar</h3></li>
+                        </ul>
+                        <ul>
+                            <li><h3>4,5</h3></li>
+                            <div class="stars">
+                                <ul>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star</i></li>
+                                    <li><i class="material-icons">star_half</i></li>
+                                </ul>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="nombre">
+            <h2>Realizado por DavidRosas</h2>
+        </div>
+        <div class="RRSS">
+            <ul>
+                <li><a href="https://github.com/davidroses02"><i class="fa fa-github fa-3x" aria-hidden="true"></i></li>
+                <li><a href="https://www.instagram.com/_rosass0/" > <i class="fa fa-instagram fa-3x" aria-hidden="true"></i></li>
+                <li><a href="https://twitter.com/David_volrev" >  <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+    </footer>
+    </body>
+</body>
+</html>

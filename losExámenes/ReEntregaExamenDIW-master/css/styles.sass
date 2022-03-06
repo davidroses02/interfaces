@@ -1,0 +1,223 @@
+html
+    font-family: "Roboto"
+    background-image: url(../img/fondo.jpg)
+    background-attachment: fixed
+    background-size: cover
+    body
+        header
+            display: flex
+            flex-direction: column
+            background-color: rgba(0, 0, 0, 0.7)
+            text-align: center
+            align-items: center
+            justify-content: center
+            transition: transform 2s
+            transform: rotateY(360deg)
+            height: 100vh
+            h1
+                color: #7c4dff
+                opacity: 0
+                animation-name: anim_header_h1
+                animation-duration: 1.5s
+                animation-delay: 2s
+                animation-fill-mode: forwards
+            ul
+                display: flex
+                margin: 0
+                padding: 0
+                i
+                    color: #aeea00
+                    font-size: 30px
+                    padding: 0 1% 0 1%
+                    margin: 0 15px 0 7px
+                i:active
+                    transform: scale(1.1)
+                    transform: perspective(600px) scale3d(2,2,2) rotateY(360deg) rotateX(360deg)
+                i:hover
+                    color: #e4ff54 
+            @media screen and (min-width: 830px)
+                h1
+                    font-size: 50px
+                ul
+                    i
+                        font-size: 38px
+            @media screen and (min-width: 1200px)
+                h1
+                    font-size: 70px
+                ul
+                    i
+                        font-size: 50px
+        nav
+            margin: 2% 4% 2% 4%
+            ul
+                list-style: none
+                background-color: #7c4dff
+                color: #ffffff
+                margin: 0
+                padding: 0
+                li
+                    display: flex
+                    text-align: center
+                    padding: 15px 25px
+                    align-items: center
+                    justify-content: center
+                    i
+                        margin-right: 10px
+                    li:hover
+                        background-color: #ffffff
+                        color: #7c4dff
+            @media screen and (min-width: 830px)
+                ul
+                    display: flex
+        #contenedormainaside
+            main
+                section
+                    display: flex
+                    flex-wrap: wrap
+                    transform-style: preserve-3d
+                    article
+                        background-color: white
+                        margin: 2% 4% 2% 4%
+                        h2
+                            margin-left: 4%
+                            color: #b47cff
+                        p
+                            margin: 4%
+                            text-align: justify
+                            line-height: 25px
+                        h3
+                            display: none
+                            color: #b47cff
+                            margin-left: 4%
+            #contenedoraside
+                display: flex
+                flex-wrap: wrap
+                transform-style: preserve-3d
+                aside
+                    background-color: white
+                    margin: 2% 4% 2% 4%
+                    h2
+                        margin-left: 4%
+                        color: #e4ff54
+                    p
+                        margin: 4%
+                        text-align: justify
+                        line-height: 25px
+            @media screen and (min-width: 830px)
+                main
+                    section
+                        article
+                            transition: all 1s
+                            h3
+                                font-size: 10px
+                        article:hover
+                            transform: perspective(2000px) rotateY(15deg)
+                #contenedoraside
+                    aside
+                        transition: all 3s
+                        h2
+                            color: #e4ff54
+                    aside:hover
+                        transform: skewY(5deg)
+                        box-shadow: -2px 3px 7px 0px #e4ff54
+                        p
+                            color: #e4ff54
+        footer
+            background-color: white
+            margin: 4%
+            padding: 3%
+            a
+                text-decoration: none
+            a:hover
+                background-color: #7c4dff
+                color: #ffffff
+        @media screen and (min-width: 830px) and (max-width: 1199px)
+            #contenedormainaside
+                display: flex
+                flex-direction: column-reverse
+                main
+                    section
+                        width: 94%
+                        margin: 0 auto
+                        article
+                            margin: 1%
+                            width: 48%
+                            box-sizing: border-box
+                            h3
+                                display: block
+                #contenedoraside
+                    aside
+                        width: 100%
+                    #bottomaside
+                        display: none
+            footer
+                display: none
+        @media screen and (min-width: 1200px)
+            #contenedormainaside
+                display: flex
+                flex-wrap: wrap
+                margin: 0 3%
+                main
+                    display: flex
+                    width: 75%
+                    section
+                        display: flex
+                        flex-wrap: wrap
+                        width: 100%
+                        article
+                            width: 31.33%
+                            margin: 1%
+                            transition: transform 1s
+                            transform-origin: 0 0
+                            h3
+                                display: block
+                        article:hover
+                            transform: rotate(45deg)
+                            transition: transform 1s
+                            h2
+                                transition: transform 1s
+                                transform: rotate(360deg)
+                                transition-delay: 1s
+                #contenedoraside
+                    width: 25%
+                    aside
+                        width: 100%
+                        margin: 4%
+                    aside:hover
+                        h2
+                            animation-name: anim_aside
+                            animation-duration: 1.5s
+            footer
+                padding: 2%
+                margin-top: 2%
+                margin-bottom: 2%
+
+@keyframes anim_aside
+    0%
+        transform: translateX(0) translateY(0)
+    10%
+        transform: translateX(50px) translateY(0)
+    20%
+        transform: translateX(25px) translateY(25px)
+    30%
+        transform: translateX(0) translateY(50px)
+    40%
+        transform: translateX(-25px) translateY(25px)
+    50%
+        transform: translateX(-50px) translateY(0)
+    60%
+        transform: translateX(-25px) translateY(-25px)
+    70%
+        transform: translateX(0) translateY(-50px)
+    80%
+        transform: translateX(25px) translateY(-25px)
+    90%
+        transform: translateX(50px) translateY(0)
+    100%
+        transform: translateX(0) translateY(0)
+
+@keyframes anim_header_h1
+    from
+        opacity: 0
+    to
+        opacity: 1

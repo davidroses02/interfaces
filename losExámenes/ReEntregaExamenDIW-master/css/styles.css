@@ -1,0 +1,316 @@
+html {
+  font-family: "Roboto";
+  background-image: url(../img/fondo.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+html body header {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  transition: transform 2s;
+  transform: rotateY(360deg);
+  height: 100vh;
+}
+
+html body header h1 {
+  color: #7c4dff;
+  opacity: 0;
+  animation-name: anim_header_h1;
+  animation-duration: 1.5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+html body header ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+html body header ul i {
+  color: #aeea00;
+  font-size: 30px;
+  padding: 0 1% 0 1%;
+  margin: 0 15px 0 7px;
+}
+
+html body header ul i:active {
+  transform: scale(1.1);
+  transform: perspective(600px) scale3d(2, 2, 2) rotateY(360deg) rotateX(360deg);
+}
+
+html body header ul i:hover {
+  color: #e4ff54;
+}
+
+@media screen and (min-width: 830px) {
+  html body header h1 {
+    font-size: 50px;
+  }
+  html body header ul i {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html body header h1 {
+    font-size: 70px;
+  }
+  html body header ul i {
+    font-size: 50px;
+  }
+}
+
+html body nav {
+  margin: 2% 4% 2% 4%;
+}
+
+html body nav ul {
+  list-style: none;
+  background-color: #7c4dff;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+html body nav ul li {
+  display: flex;
+  text-align: center;
+  padding: 15px 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+html body nav ul li i {
+  margin-right: 10px;
+}
+
+html body nav ul li li:hover {
+  background-color: #ffffff;
+  color: #7c4dff;
+}
+
+@media screen and (min-width: 830px) {
+  html body nav ul {
+    display: flex;
+  }
+}
+
+html body #contenedormainaside main section {
+  display: flex;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+}
+
+html body #contenedormainaside main section article {
+  background-color: white;
+  margin: 2% 4% 2% 4%;
+}
+
+html body #contenedormainaside main section article h2 {
+  margin-left: 4%;
+  color: #b47cff;
+}
+
+html body #contenedormainaside main section article p {
+  margin: 4%;
+  text-align: justify;
+  line-height: 25px;
+}
+
+html body #contenedormainaside main section article h3 {
+  display: none;
+  color: #b47cff;
+  margin-left: 4%;
+}
+
+html body #contenedormainaside #contenedoraside {
+  display: flex;
+  flex-wrap: wrap;
+  transform-style: preserve-3d;
+}
+
+html body #contenedormainaside #contenedoraside aside {
+  background-color: white;
+  margin: 2% 4% 2% 4%;
+}
+
+html body #contenedormainaside #contenedoraside aside h2 {
+  margin-left: 4%;
+  color: #e4ff54;
+}
+
+html body #contenedormainaside #contenedoraside aside p {
+  margin: 4%;
+  text-align: justify;
+  line-height: 25px;
+}
+
+@media screen and (min-width: 830px) {
+  html body #contenedormainaside main section article {
+    transition: all 1s;
+  }
+  html body #contenedormainaside main section article h3 {
+    font-size: 10px;
+  }
+  html body #contenedormainaside main section article:hover {
+    transform: perspective(2000px) rotateY(15deg);
+  }
+  html body #contenedormainaside #contenedoraside aside {
+    transition: all 3s;
+  }
+  html body #contenedormainaside #contenedoraside aside h2 {
+    color: #e4ff54;
+  }
+  html body #contenedormainaside #contenedoraside aside:hover {
+    transform: skewY(5deg);
+    box-shadow: -2px 3px 7px 0px #e4ff54;
+  }
+  html body #contenedormainaside #contenedoraside aside:hover p {
+    color: #e4ff54;
+  }
+}
+
+html body footer {
+  background-color: white;
+  margin: 4%;
+  padding: 3%;
+}
+
+html body footer a {
+  text-decoration: none;
+}
+
+html body footer a:hover {
+  background-color: #7c4dff;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 830px) and (max-width: 1199px) {
+  html body #contenedormainaside {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  html body #contenedormainaside main section {
+    width: 94%;
+    margin: 0 auto;
+  }
+  html body #contenedormainaside main section article {
+    margin: 1%;
+    width: 48%;
+    box-sizing: border-box;
+  }
+  html body #contenedormainaside main section article h3 {
+    display: block;
+  }
+  html body #contenedormainaside #contenedoraside aside {
+    width: 100%;
+  }
+  html body #contenedormainaside #contenedoraside #bottomaside {
+    display: none;
+  }
+  html body footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html body #contenedormainaside {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 3%;
+  }
+  html body #contenedormainaside main {
+    display: flex;
+    width: 75%;
+  }
+  html body #contenedormainaside main section {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  html body #contenedormainaside main section article {
+    width: 31.33%;
+    margin: 1%;
+    transition: transform 1s;
+    transform-origin: 0 0;
+  }
+  html body #contenedormainaside main section article h3 {
+    display: block;
+  }
+  html body #contenedormainaside main section article:hover {
+    transform: rotate(45deg);
+    transition: transform 1s;
+  }
+  html body #contenedormainaside main section article:hover h2 {
+    transition: transform 1s;
+    transform: rotate(360deg);
+    transition-delay: 1s;
+  }
+  html body #contenedormainaside #contenedoraside {
+    width: 25%;
+  }
+  html body #contenedormainaside #contenedoraside aside {
+    width: 100%;
+    margin: 4%;
+  }
+  html body #contenedormainaside #contenedoraside aside:hover h2 {
+    animation-name: anim_aside;
+    animation-duration: 1.5s;
+  }
+  html body footer {
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+@keyframes anim_aside {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  10% {
+    transform: translateX(50px) translateY(0);
+  }
+  20% {
+    transform: translateX(25px) translateY(25px);
+  }
+  30% {
+    transform: translateX(0) translateY(50px);
+  }
+  40% {
+    transform: translateX(-25px) translateY(25px);
+  }
+  50% {
+    transform: translateX(-50px) translateY(0);
+  }
+  60% {
+    transform: translateX(-25px) translateY(-25px);
+  }
+  70% {
+    transform: translateX(0) translateY(-50px);
+  }
+  80% {
+    transform: translateX(25px) translateY(-25px);
+  }
+  90% {
+    transform: translateX(50px) translateY(0);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+
+@keyframes anim_header_h1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

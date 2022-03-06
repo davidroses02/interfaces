@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Russo+One&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #303F9F;
+    color: white;
+}
+
+nav .list-nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    margin-right: 25px;
+}
+
+.list-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.list-nav ul li {
+    margin-left: 5px;
+}
+
+nav h2 {
+    margin-left: 10px;
+}
+
+/* MAIN */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.animacion {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 400px;
+    height: 100%;
+}
+
+.boton {
+    width: 400px;
+    height: 35px;
+    background-color: #FFC107;
+}
+
+.boton a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ANIMACIÓN */
+
+.animacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo-animacion h2 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.subtitulo-animacion h3 {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Russo One', sans-serif;
+}
+
+.titulo-animacion {
+    width: 0px;
+}
+
+.titulo-animacion:hover, .subtitulo-animacion:hover {
+    width: 100%;
+    height: 100%;
+    background: #FFC107;
+    transition: width 2s;
+}
+
+.subtitulo-animacion {
+    width: 0px;
+}
+
+.subtitulo-animacion:hover {
+    transition: width 2s;
+    width: 100%;
+    height: 100%;
+    background: #FFC107;
+}

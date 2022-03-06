@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.svg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.canva {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario form input, 
+.formulario form textarea {
+    margin-bottom: 10px;
+}
+
+.input:invalid {
+    border: 2px solid red;
+}
+
+textarea:invalid {
+    border: 2px solid red;
+}
+
+.input:valid {
+    border: 2px solid green;
+}
+
+textarea:valid {
+    border: 2px solid green;
+}
